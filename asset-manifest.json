@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tymanskaya/static/css/main.5206cfeb.css",
-    "main.js": "/tymanskaya/static/js/main.b382da83.js",
-    "static/js/787.66cb4309.chunk.js": "/tymanskaya/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/tymanskaya/static/media/avatar.d947cb9d0d13765666b6.png",
-    "index.html": "/tymanskaya/index.html",
-    "main.5206cfeb.css.map": "/tymanskaya/static/css/main.5206cfeb.css.map",
-    "main.b382da83.js.map": "/tymanskaya/static/js/main.b382da83.js.map",
-    "787.66cb4309.chunk.js.map": "/tymanskaya/static/js/787.66cb4309.chunk.js.map"
+    "main.css": "/homework-main02/static/css/main.5206cfeb.css",
+    "main.js": "/homework-main02/static/js/main.cbcb7903.js",
+    "static/js/787.66cb4309.chunk.js": "/homework-main02/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/homework-main02/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/homework-main02/index.html",
+    "main.5206cfeb.css.map": "/homework-main02/static/css/main.5206cfeb.css.map",
+    "main.cbcb7903.js.map": "/homework-main02/static/js/main.cbcb7903.js.map",
+    "787.66cb4309.chunk.js.map": "/homework-main02/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5206cfeb.css",
-    "static/js/main.b382da83.js"
+    "static/js/main.cbcb7903.js"
   ]
 }
