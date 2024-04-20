@@ -1,0 +1,93 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 10px;
+    width: 100%;
+
+
+}
+
+.imageAndText img {
+    width: 48px;
+    height: 48px;
+
+}
+
+.text {
+    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0px 1px 2px 0px rgba(29, 33, 38, 0.1), 0px 5px 20px 0px rgba(29, 33, 38, 0.03);
+    background: rgb(0, 102, 204);
+    border-radius: 10px 10px 0px 10px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+    padding: 13px;
+    max-width: 575px;
+
+
+}
+
+.text:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: -10px;
+    bottom: 0px; /* Положение треугольника */
+    border: 9px solid transparent;
+    border-bottom: 9px solid #0066CC;
+    border-left: 9px solid #0066CC;
+    box-shadow: 0 6px 4px -4px rgba(29, 33, 38, 0.1);
+
+
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+
+
+}
+
+.messageText {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, с 1999 года*/
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+
+
+}
+
+.time {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0;
+    text-align: center;
+    padding-right: 11px;
+}

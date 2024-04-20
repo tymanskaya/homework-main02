@@ -1,0 +1,80 @@
+.friendMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.friendImageAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.friendImageAndText img {
+    width: 48px;
+    height: 48px;
+}
+
+.friendText {
+    box-shadow: 0px 1px 2px 0px rgba(29, 33, 38, 0.1),0px 5px 20px 0px rgba(29, 33, 38, 0.03);
+    background: rgb(245, 247, 251);
+    border-radius: 10px 10px 10px 0px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    padding: 13px;
+    max-width: 575px;
+}
+
+.friendText:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: -18px;
+    bottom: 0px; /* Положение треугольника */
+    border: 9px solid transparent;
+    border-bottom: 9px solid rgb(245, 247, 251);
+    border-right: 9px solid rgb(245, 247, 251);
+    box-shadow: 2px 4px 2px -3px rgba(29, 33, 38, 0.1);
+}
+
+.friendName {
+    color: rgb(0,0,0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: right;
+}
+
+.friendMessageText {
+    color: rgb(0,0,0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: right;
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, с 1999 года*/
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.friendTime {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 11px;
+}
