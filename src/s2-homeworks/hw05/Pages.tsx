@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import {Routes, Route, Navigate, HashRouter} from 'react-router-dom'
 import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 import Junior from './pages/Junior'
@@ -15,19 +15,24 @@ function Pages() {
     return (
         <div>
             {/*Routes выбирает первый подходящий роут*/}
-            <Routes>
-                {/*роутинг будут писать студенты*/}
-                {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
-                {/*<Route ...*/}
 
-                {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
+                <Routes>
+                    {/*роутинг будут писать студенты*/}
+                    {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
+                    <Route path='/' element={<PreJunior/>}/>
 
-                {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
-                {/*<Route ...*/}
-            </Routes>
+                    {/*роуты для /pre-junior, /junior, /junior-plus*/}
+                    <Route path='/pre-junior' element={<PreJunior/>}/>
+                    <Route path='/junior' element={<Junior/>}/>
+                    <Route path='/junior-plus' element={<JuniorPlus/>}/>
+
+                    <Route path='/error404' element={<Error404 />}/>
+                    <Route path='/*' element={<Navigate to={'/error404'}/>}/>
+                    {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
+
+                </Routes>
+
+
         </div>
     )
 }
